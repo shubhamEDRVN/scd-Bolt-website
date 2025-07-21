@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-purple: #8B5CF6;
-    --dark-purple: #6D28D9;
-    --light-purple: #A78BFA;
+    --primary-purple: #5B21B6;
+    --dark-purple: #4C1D95;
+    --light-purple: #7C3AED;
     --orange: #F97316;
     --light-orange: #FB923C;
     --white: #FFFFFF;
@@ -35,17 +35,17 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(139, 92, 246, 0.98);
+    background: rgba(91, 33, 182, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     padding: 0.8rem 0;
     transition: var(--transition);
-    box-shadow: 0 2px 20px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 2px 20px rgba(91, 33, 182, 0.3);
 }
 
 .navbar.scrolled {
-    background: rgba(109, 40, 217, 0.98);
+    background: rgba(76, 29, 149, 0.98);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     padding: 0.6rem 0;
 }
@@ -218,6 +218,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    padding: 0 20px;
 }
 
 .hero-background {
@@ -693,6 +694,192 @@ body {
     opacity: 0.9;
 }
 
+/* Speakers Section */
+.speakers-section {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.speaker-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.speaker-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, var(--primary-purple), var(--orange));
+}
+
+.speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.speaker-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    border: 4px solid var(--primary-purple);
+    transition: var(--transition);
+}
+
+.speaker-card:hover .speaker-image {
+    transform: scale(1.05);
+    border-color: var(--orange);
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-info h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.speaker-title {
+    color: var(--primary-purple);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.speaker-company {
+    color: var(--gray);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.speaker-bio {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    padding: 6rem 0;
+    background: var(--light-gray);
+}
+
+.sponsor-tier {
+    margin-bottom: 4rem;
+}
+
+.tier-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.tier-title.platinum {
+    color: #E5E7EB;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tier-title.gold {
+    color: #F59E0B;
+}
+
+.tier-title.silver {
+    color: #9CA3AF;
+}
+
+.tier-title.partners {
+    color: var(--primary-purple);
+}
+
+.sponsors-grid {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.sponsors-grid.platinum {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sponsors-grid.gold {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.sponsors-grid.silver {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.sponsors-grid.partners {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.sponsor-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    width: 100%;
+    max-width: 300px;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-purple);
+    border: 2px dashed var(--light-purple);
+    border-radius: 10px;
+    background: var(--light-gray);
+}
+
+.sponsor-name {
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.sponsor-description {
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 1.4;
+}
+
 /* Team Section */
 .team-section {
     padding: 6rem 0;
@@ -1035,6 +1222,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .nav-brand {
         flex-direction: column;
         gap: 0.5rem;
@@ -1042,17 +1233,18 @@ body {
     }
 
     .aws-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .brand-line, .location-line {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
+        gap: 0.3rem;
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 80px;
+        top: 70px;
         flex-direction: column;
         background: var(--primary-purple);
         width: 100%;
@@ -1061,10 +1253,20 @@ body {
         padding: 2rem 0;
         backdrop-filter: blur(15px);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-link {
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .nav-toggle {
@@ -1083,12 +1285,25 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .hero {
+        padding: 100px 20px 50px;
+    }
+
     .aws-main {
         font-size: 2.8rem;
     }
 
     .hero-title {
         font-size: 2.8rem;
+    }
+
+    .hero-subtitle-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .event-details {
+        margin-bottom: 2rem;
     }
 
     .hero-badge {
@@ -1099,6 +1314,16 @@ body {
         font-size: 0.8rem;
     }
 
+    .event-info, .event-location {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .register-btn {
+        padding: 0.8rem 2rem;
+    }
+
     .social-icons {
         right: 1rem;
     }
@@ -1106,6 +1331,14 @@ body {
     .social-icon {
         width: 40px;
         height: 40px;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsors-grid.platinum, .sponsors-grid.gold, .sponsors-grid.silver, .sponsors-grid.partners {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .venue-content {
@@ -1135,16 +1368,20 @@ body {
         padding: 0 15px;
     }
 
+    .hero {
+        padding: 90px 15px 40px;
+    }
+
     .nav-brand {
         align-items: center;
     }
 
     .aws-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .brand-line, .location-line {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
         gap: 0.3rem;
     }
 
@@ -1154,6 +1391,14 @@ body {
 
     .aws-main {
         font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .event-info, .event-location {
+        font-size: 1rem;
     }
 
     .section-title {
@@ -1168,6 +1413,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .sponsors-grid.platinum, .sponsors-grid.gold, .sponsors-grid.silver, .sponsors-grid.partners {
+        grid-template-columns: 1fr;
+    }
+
     .venue-card {
         padding: 2rem;
     }
@@ -1180,6 +1429,14 @@ body {
         flex-direction: row;
         justify-content: center;
         margin-top: 2rem;
+    }
+
+    .speaker-card, .sponsor-card {
+        padding: 1.5rem;
+    }
+
+    .tier-title {
+        font-size: 1.5rem;
     }
 }
 
