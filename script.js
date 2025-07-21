@@ -165,7 +165,7 @@ function initializeScrollEffects() {
     }, observerOptions);
 
     // Observe elements for scroll animations
-    const elementsToObserve = document.querySelectorAll('.about-text, .feature-card, .organiser-card, .team-member');
+    const elementsToObserve = document.querySelectorAll('.about-text, .feature-card, .speaker-card, .sponsor-card, .organiser-card, .team-member');
     elementsToObserve.forEach(element => {
         observer.observe(element);
     });
@@ -193,7 +193,7 @@ function initializeParallax() {
 
 // Button hover effects
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.register-btn, .social-icon, .footer-social-link');
+    const buttons = document.querySelectorAll('.register-btn, .social-icon, .footer-social-link, .linkedin-link');
     
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function() {
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Card hover effects
 document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.feature-card, .organiser-card, .stat-item');
+    const cards = document.querySelectorAll('.feature-card, .speaker-card, .sponsor-card, .organiser-card, .stat-item');
     
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
