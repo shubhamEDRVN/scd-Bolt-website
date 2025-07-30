@@ -1,193 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWS Student Community Day 2025 - Medicaps</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="nav-brand">
-                    <div class="aws-logo-nav">
-                        <span class="aws-text">aws</span>
-                        <div class="aws-underline-nav"></div>
-                    </div>
-                    <div class="brand-text">
-                        <div class="brand-line">
-                            <span class="student-text">STUDENT</span>
-                            <span class="community-text">COMMUNITY DAY</span>
-                        </div>
-                        <div class="location-line">
-                            <span class="location-text">MEDICAPS</span>
-                            <span class="year-text">2025</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#speakers" class="nav-link">Speakers</a>
-                <a href="#sponsors" class="nav-link">Sponsors</a>
-                <a href="#team" class="nav-link">Team</a>
-                <a href="#venue" class="nav-link">Venue</a>
-                <a href="#contact" class="nav-link nav-cta">Register</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="public/SCD logo white.png"
+            alt="AWS Community Day Indore Logo"
+            style="height: 105px; width:200px; object-fit:cover; object-position: top;"
+          />
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#speakers" class="nav-link">Speakers</a>
+          <a href="#sponsors" class="nav-link">Sponsors</a>
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#venue" class="nav-link">Venue</a>
+          <a href="#contact" class="nav-link nav-cta">Register</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-                <div class="shape shape-5"></div>
-                <div class="shape shape-6"></div>
+    <section id="home" class="hero hero-redesign">
+      <div class="hero-bg-gradient"></div>
+      <div class="container hero-flex">
+        <div class="hero-left">
+          <div class="registration-badge">
+            <span class="badge-dot"></span>
+            REGISTRATION OPEN
+          </div>
+          <h1 class="hero-title">
+            <span>STUDENT</span><br />
+            <span class="highlight-orange">COMMUNITY DAY</span>
+          </h1>
+          <div class="hero-year">2025</div>
+          <div class="hero-organized">
+            Organized by <span class="highlight-orange">AWS Cloud Clubs</span>
+          </div>
+          <button class="register-btn-redesign">
+            <i class="fas fa-rocket"></i> Register Now
+          </button>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-number">400+</span>
+              <span class="stat-label">Attendees</span>
             </div>
-            <div class="grid-overlay"></div>
-        </div>
-
-        <div class="hero-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-
-        <div class="hero-content">
-            <!-- <div class="hero-announcement">
-                <div class="announcement-badge">
-                    <span class="badge-icon">🚀</span>
-                    <span class="badge-text">Join the Cloud Revolution</span>
-                    <span class="badge-icon">⚡</span>
-                </div>
-            </div> -->
-
-            <div class="hero-main">
-                <div class="hero-logo-section" style="margin-bottom:1.5rem;">
-                    <div class="aws-logo-container">
-                        <div class="aws-logo-main">
-                            <span class="aws-text">aws</span>
-                            <div class="aws-smile"></div>
-                        </div>
-                        <div class="logo-glow"></div>
-                    </div>
-                </div>
-
-                <div class="hero-title-section">
-                    <h1 class="hero-main-title" style="font-size:clamp(1.5rem,7vw,4.5rem);">
-                        <span class="title-line-1">STUDENT</span>
-                        <span class="title-line-2">COMMUNITY</span>
-                        <span class="title-line-3">DAY</span>
-                    </h1>
-                    <div class="title-decoration">
-                        <div class="decoration-line"></div>
-                        <div class="decoration-dot"></div>
-                        <div class="decoration-line"></div>
-                    </div>
-                </div>
-
-                <div class="hero-subtitle-section">
-                    <p class="hero-subtitle" style="font-size:clamp(1rem,3vw,1.3rem);">Organized by AWS Cloud Clubs</p>
-                    <div class="year-badge" style="padding:0.5rem 1.2rem; font-size:clamp(1rem,3vw,1.5rem);">
-                        <span class="year-text">2025</span>
-                        <div class="badge-shine"></div>
-                    </div>
-                </div>
-
-                <div class="hero-event-info" style="flex-direction:column;gap:1rem;">
-                    <div class="event-card" style="width:100%;max-width:350px;margin:0 auto;">
-                        <div class="event-icon">
-                            <i class="fas fa-calendar-alt"></i>
-                        </div>
-                        <div class="event-text">
-                            <span class="event-date">26th September 2025</span>
-                            <span class="event-time">12 PM - 5 PM</span>
-                        </div>
-                    </div>
-                    <div class="event-card" style="width:100%;max-width:350px;margin:0 auto;">
-                        <div class="event-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="event-text">
-                            <span class="event-venue">Medicaps University</span>
-                            <span class="event-location">Auditorium, Indore</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-cta-section" style="gap:1.2rem;">
-                    <button class="register-btn-new" style="position:relative;width:100%;max-width:350px;margin:0 auto;">
-                        <span class="btn-bg"></span>
-                        <span class="btn-text">
-                            <i class="fas fa-rocket"></i>
-                            Register Now
-                        </span>
-                        <div class="btn-particles">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </button>
-
-                    <div class="hero-stats-preview" style="flex-direction:row;gap:1.2rem;justify-content:center;flex-wrap:wrap;">
-                        <div class="stat-preview" style="min-width:90px;">
-                            <span class="stat-number">400+</span>
-                            <span class="stat-label">Attendees</span>
-                        </div>
-                        <div class="stat-preview" style="min-width:90px;">
-                            <span class="stat-number">10</span>
-                            <span class="stat-label">Speakers</span>
-                        </div>
-                        <div class="stat-preview" style="min-width:90px;">
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">Hours</span>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <span class="stat-number">10</span>
+              <span class="stat-label">Speakers</span>
             </div>
-        </div>
-
-        <div class="hero-scroll-indicator">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
+            <div>
+              <span class="stat-number">5</span>
+              <span class="stat-label">Hours</span>
             </div>
-            <span class="scroll-text">Scroll to explore</span>
+          </div>
         </div>
-
-        <!-- Social Media Icons -->
-        <div class="social-icons" style="right:0.5rem;bottom:1rem;top:auto;flex-direction:row;gap:0.5rem;transform:none;">
-            <a href="https://www.instagram.com/medicaps_awsc/" class="social-icon instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/aws-next/posts/?feedView=all" class="social-icon linkedin">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-icon twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.meetup.com/aws-cloud-club-at-medi-caps-university/" class="social-icon meetup" target="_blank" rel="noopener" style="background-color:white ; color: red;">
-                <i class="fab fa-meetup"></i>
-            </a>
+        <div class="hero-right">
+          <div class="event-card-redesign">
+            <div class="event-row">
+              <i class="fas fa-calendar-alt event-icon-redesign"></i>
+              <div>
+                <div class="event-main">26th September 2025</div>
+                <div class="event-sub">12 PM - 5 PM</div>
+              </div>
+            </div>
+            <div class="event-row">
+              <i class="fas fa-map-marker-alt event-icon-redesign"></i>
+              <div>
+                <div class="event-main">Medicaps University</div>
+                <div class="event-sub">Auditorium, Indore</div>
+              </div>
+            </div>
+            <div class="event-row">
+              <i class="fas fa-users event-icon-redesign"></i>
+              <div>
+                <div class="event-main">400+ Students</div>
+                <div class="event-sub">Limited Seats Available</div>
+              </div>
+            </div>
+            <div class="event-social-row">
+              <a
+                href="https://www.instagram.com/medicaps_awsc/"
+                class="event-social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/aws-next/posts/?feedView=all"
+                class="event-social-icon"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="event-social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- <div class="hero-scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span class="scroll-text">Scroll to explore</span>
+      </div> -->
     </section>
 
     <!-- Statistics Section -->
@@ -227,269 +161,446 @@
     </section> -->
 
     <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">About AWS Student Community Day 2025</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    Welcome to the AWS Student Community Day Medicaps, a gathering aimed at exploring the latest 
-                    trends, innovations, and best practices in the world of cloud computing offered by Amazon Web 
-                    Services (AWS).
-                </p>
-                <p class="about-text">
-                    Our Student Community Day brings together experts, enthusiasts, and learners from various 
-                    domains to delve into the advancements, strategies, and real-world applications of AWS cloud 
-                    services.
-                </p>
-                <p class="about-text">
-                    Join us for insightful sessions, engaging discussions, hands-on workshops, and networking 
-                    opportunities, all tailored to expand your knowledge and proficiency in leveraging AWS solutions.
-                </p>
-            </div>
+    <!-- <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About AWS Student Community Day 2025</h2>
+        <div class="about-content">
+          <p class="about-text">
+            Welcome to the AWS Student Community Day Medicaps, a gathering aimed
+            at exploring the latest trends, innovations, and best practices in
+            the world of cloud computing offered by Amazon Web Services (AWS).
+          </p>
+          <p class="about-text">
+            Our Student Community Day brings together experts, enthusiasts, and
+            learners from various domains to delve into the advancements,
+            strategies, and real-world applications of AWS cloud services.
+          </p>
+          <p class="about-text">
+            Join us for insightful sessions, engaging discussions, hands-on
+            workshops, and networking opportunities, all tailored to expand your
+            knowledge and proficiency in leveraging AWS solutions.
+          </p>
         </div>
+      </div>
+    </section> -->
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About AWS Student Community Day 2025</h2>
+        <div class="about-content">
+          <p class="about-text">
+            With Amazon Web Services (AWS), the world leader in cloud innovation
+            and digital transformation, get ready to take an exciting journey
+            into the dynamic world of cloud computing
+          </p>
+          <p class="about-text">
+            This event is a celebration of curiosity, teamwork, and the
+            potential of cloud computing. From thought-provoking lectures by AWS
+            professionals and community leaders to practical problems, you will
+            acquire priceless insight into the tactics that underpin some of the
+            most significant technologies in the world.
+          </p>
+          <p class="about-text">
+            Join us for insightful sessions, engaging discussions, hands-on
+            workshops, and networking opportunities, all tailored to expand your
+            knowledge and proficiency in leveraging AWS solutions.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Why Attend Section -->
-    <section class="why-attend-section">
-        <div class="container">
-            <h2 class="section-title white">Why Attend ?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Learn from Experts</h3>
-                    <p>Get insights from industry professionals and AWS experts who will share their knowledge and experience.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Network & Connect</h3>
-                    <p>Connect with like-minded students, professionals, and potential mentors in the cloud computing space.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Hands-on Workshops</h3>
-                    <p>Participate in practical workshops and gain real-world experience with AWS services and tools.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Certificates & Prizes</h3>
-                    <p>Earn certificates of participation and compete for exciting prizes and AWS credits.</p>
-                </div>
+    <!-- <section class="why-attend-section">
+      <div class="container">
+        <h2 class="section-title white">Why Attend ?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
             </div>
+            <h3>Learn from Experts</h3>
+            <p>
+              Get insights from industry professionals and AWS experts who will
+              share their knowledge and experience.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Network & Connect</h3>
+            <p>
+              Connect with like-minded students, professionals, and potential
+              mentors in the cloud computing space.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Hands-on Workshops</h3>
+            <p>
+              Participate in practical workshops and gain real-world experience
+              with AWS services and tools.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certificates & Prizes</h3>
+            <p>
+              Earn certificates of participation and compete for exciting prizes
+              and AWS credits.
+            </p>
+          </div>
         </div>
+      </div>
+    </section> -->
+
+    <section class="why-attend-section">
+      <div class="container">
+        <h2 class="section-title white">Why Attend ?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Learn from Experts</h3>
+            <p>
+              Receive guidance from industry professionals and aws experts,
+              sharing their experience and knowledge.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Network & Connect</h3>
+            <p>
+              Connect with mentors, professionals, students of shared vision and
+              discover networking opportunities in the cloud computing space.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Hands-on Workshops</h3>
+            <p>
+              Gain Hands-on experience with practical workshops through AWS
+              services and tools.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3>Certificates & Prizes</h3>
+            <p>
+              Secure a certificate of participation and compete for captivating
+              prizes and AWS credits.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Learn about industry trends</h3>
+            <p>
+              Analyze new industry trends with AWS and explore in-demand tools,
+              services required to boost your career and make you
+              industry-ready.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Acquire resume-worthy experience</h3>
+            <p>
+              Showcase your technical and soft skills, to make your resume stand
+              out and professional
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Speakers Section -->
     <section id="speakers" class="speakers-section">
-        <div class="container">
-            <h2 class="section-title">SPEAKERS</h2>
-            <div class="speakers-grid">
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <!-- <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Dr. Sarah Johnson"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Dr. Sarah Johnson</h3>
-                        <p class="speaker-title">Senior Cloud Architect</p>
-                        <p class="speaker-company">Amazon Web Services</p>
-                        <p class="speaker-bio">Leading expert in cloud infrastructure with 10+ years of experience in designing scalable AWS solutions.</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <!-- <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Michael Chen"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Michael Chen</h3>
-                        <p class="speaker-title">DevOps Engineer</p>
-                        <p class="speaker-company">Microsoft Azure</p>
-                        <p class="speaker-bio">Specializes in CI/CD pipelines and cloud automation with expertise in multi-cloud environments.</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <!-- <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Priya Sharma"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Priya Sharma</h3>
-                        <p class="speaker-title">Machine Learning Engineer</p>
-                        <p class="speaker-company">Google Cloud</p>
-                        <p class="speaker-bio">AI/ML specialist focusing on cloud-based machine learning solutions and data analytics.</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                    <!-- <img src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="David Rodriguez"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>David Rodriguez</h3>
-                        <p class="speaker-title">Cloud Security Expert</p>
-                        <p class="speaker-company">IBM Cloud</p>
-                        <p class="speaker-bio">Cybersecurity professional with deep expertise in cloud security frameworks and compliance.</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <!-- <img src="https://images.pexels.com/photos/2182975/pexels-photo-2182975.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Emily Watson"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Emily Watson</h3>
-                        <p class="speaker-title">Startup Founder</p>
-                        <p class="speaker-company">CloudTech Innovations</p>
-                        <p class="speaker-bio">Entrepreneur who built a successful SaaS platform using AWS services from the ground up.</p>
-                    </div>
-                </div>
-                <div class="speaker-card">
-                    <div class="speaker-image">
-                        <!-- <img src="https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Raj Patel"> -->
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Raj Patel</h3>
-                        <p class="speaker-title">Solutions Architect</p>
-                        <p class="speaker-company">AWS India</p>
-                        <p class="speaker-bio">Helps enterprises migrate to cloud with focus on cost optimization and performance enhancement.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">SPEAKERS</h2>
+        <div class="speakers-grid">
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Dr. Sarah Johnson"> -->
             </div>
+            <div class="speaker-info">
+              <h3>Dr. Sarah Johnson</h3>
+              <p class="speaker-title">Senior Cloud Architect</p>
+              <p class="speaker-company">Amazon Web Services</p>
+              <p class="speaker-bio">
+                Leading expert in cloud infrastructure with 10+ years of
+                experience in designing scalable AWS solutions.
+              </p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Michael Chen"> -->
+            </div>
+            <div class="speaker-info">
+              <h3>Michael Chen</h3>
+              <p class="speaker-title">DevOps Engineer</p>
+              <p class="speaker-company">Microsoft Azure</p>
+              <p class="speaker-bio">
+                Specializes in CI/CD pipelines and cloud automation with
+                expertise in multi-cloud environments.
+              </p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Priya Sharma"> -->
+            </div>
+            <div class="speaker-info">
+              <h3>Priya Sharma</h3>
+              <p class="speaker-title">Machine Learning Engineer</p>
+              <p class="speaker-company">Google Cloud</p>
+              <p class="speaker-bio">
+                AI/ML specialist focusing on cloud-based machine learning
+                solutions and data analytics.
+              </p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="David Rodriguez"> -->
+            </div>
+            <div class="speaker-info">
+              <h3>David Rodriguez</h3>
+              <p class="speaker-title">Cloud Security Expert</p>
+              <p class="speaker-company">IBM Cloud</p>
+              <p class="speaker-bio">
+                Cybersecurity professional with deep expertise in cloud security
+                frameworks and compliance.
+              </p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/2182975/pexels-photo-2182975.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Emily Watson"> -->
+            </div>
+            <div class="speaker-info">
+              <h3>Emily Watson</h3>
+              <p class="speaker-title">Startup Founder</p>
+              <p class="speaker-company">CloudTech Innovations</p>
+              <p class="speaker-bio">
+                Entrepreneur who built a successful SaaS platform using AWS
+                services from the ground up.
+              </p>
+            </div>
+          </div>
+          <div class="speaker-card">
+            <div class="speaker-image">
+              <!-- <img src="https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Raj Patel"> -->
+            </div>
+            <div class="speaker-info">
+              <h3>Raj Patel</h3>
+              <p class="speaker-title">Solutions Architect</p>
+              <p class="speaker-company">AWS India</p>
+              <p class="speaker-bio">
+                Helps enterprises migrate to cloud with focus on cost
+                optimization and performance enhancement.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Sponsors Section -->
     <section id="sponsors" class="sponsors-section">
-        <div class="container">
-            <h2 class="section-title">SPONSORS</h2>
-            
-            <!-- Platinum Sponsors -->
-            <div class="sponsor-tier">
-                <h3 class="tier-title platinum">PLATINUM SPONSORS</h3>
-                <div class="sponsors-grid platinum">
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">AWS</div>
-                        <div class="sponsor-name">Amazon Web Services</div>
-                        <div class="sponsor-description">Leading cloud computing platform providing scalable infrastructure and services worldwide.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">MSFT</div>
-                        <div class="sponsor-name">Microsoft Azure</div>
-                        <div class="sponsor-description">Comprehensive cloud platform offering computing, analytics, storage and networking services.</div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">SPONSORS</h2>
 
-            <!-- Gold Sponsors -->
-            <div class="sponsor-tier">
-                <h3 class="tier-title gold">GOLD SPONSORS</h3>
-                <div class="sponsors-grid gold">
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">GCP</div>
-                        <div class="sponsor-name">Google Cloud Platform</div>
-                        <div class="sponsor-description">Suite of cloud computing services running on Google infrastructure.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">IBM</div>
-                        <div class="sponsor-name">IBM Cloud</div>
-                        <div class="sponsor-description">Enterprise cloud platform with AI and data analytics capabilities.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">OCI</div>
-                        <div class="sponsor-name">Oracle Cloud</div>
-                        <div class="sponsor-description">Next-generation cloud designed for enterprise workloads.</div>
-                    </div>
-                </div>
-            </div>
+          <!-- Download PDF Button -->
+ <!-- <h2 class="section-title">SPONSORS</h2> -->
+<div class="sponsor-download-btns">
+  <a href="public/ASCD Brochure'2025.pdf" download class="download-btn">
+    <i class="fas fa-file-pdf"></i> View Brochure
+  </a>
+  <a href="public/Sponsorship tiers & benefits.png" download class="download-btn">
+    <i class="fas fa-file-image"></i> View Bracket
+  </a>
+</div>
 
-            <!-- Silver Sponsors -->
-            <div class="sponsor-tier">
-                <h3 class="tier-title silver">SILVER SPONSORS</h3>
-                <div class="sponsors-grid silver">
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">DO</div>
-                        <div class="sponsor-name">DigitalOcean</div>
-                        <div class="sponsor-description">Simple cloud computing platform for developers.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">LN</div>
-                        <div class="sponsor-name">Linode</div>
-                        <div class="sponsor-description">High-performance cloud computing and hosting services.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">VL</div>
-                        <div class="sponsor-name">Vultr</div>
-                        <div class="sponsor-description">Global cloud infrastructure with high-performance SSD cloud servers.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">HZ</div>
-                        <div class="sponsor-name">Hetzner</div>
-                        <div class="sponsor-description">European cloud provider offering dedicated servers and cloud solutions.</div>
-                    </div>
-                </div>
+        <!-- Platinum Sponsors -->
+        <div class="sponsor-tier">
+          <h3 class="tier-title platinum">PLATINUM SPONSORS</h3>
+          <div class="sponsors-grid platinum">
+            <div class="sponsor-card">
+              <div class="sponsor-logo">AWS</div>
+              <div class="sponsor-name">Amazon Web Services</div>
+              <div class="sponsor-description">
+                Leading cloud computing platform providing scalable
+                infrastructure and services worldwide.
+              </div>
             </div>
-
-            <!-- Partners -->
-            <div class="sponsor-tier">
-                <h3 class="tier-title partners">PARTNERS</h3>
-                <div class="sponsors-grid partners">
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">GH</div>
-                        <div class="sponsor-name">GitHub</div>
-                        <div class="sponsor-description">Development platform for version control and collaboration.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">VS</div>
-                        <div class="sponsor-name">Visual Studio Code</div>
-                        <div class="sponsor-description">Free source-code editor with debugging and Git integration.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">DK</div>
-                        <div class="sponsor-name">Docker</div>
-                        <div class="sponsor-description">Platform for developing, shipping, and running applications in containers.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">K8</div>
-                        <div class="sponsor-name">Kubernetes</div>
-                        <div class="sponsor-description">Open-source container orchestration platform.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">TF</div>
-                        <div class="sponsor-name">Terraform</div>
-                        <div class="sponsor-description">Infrastructure as code software tool for building and managing infrastructure.</div>
-                    </div>
-                    <div class="sponsor-card">
-                        <div class="sponsor-logo">JT</div>
-                        <div class="sponsor-name">JetBrains</div>
-                        <div class="sponsor-description">Professional development tools and IDEs for software developers.</div>
-                    </div>
-                </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">MSFT</div>
+              <div class="sponsor-name">Microsoft Azure</div>
+              <div class="sponsor-description">
+                Comprehensive cloud platform offering computing, analytics,
+                storage and networking services.
+              </div>
             </div>
+          </div>
         </div>
+
+        <!-- Gold Sponsors -->
+        <div class="sponsor-tier">
+          <h3 class="tier-title gold">GOLD SPONSORS</h3>
+          <div class="sponsors-grid gold">
+            <div class="sponsor-card">
+              <div class="sponsor-logo">GCP</div>
+              <div class="sponsor-name">Google Cloud Platform</div>
+              <div class="sponsor-description">
+                Suite of cloud computing services running on Google
+                infrastructure.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">IBM</div>
+              <div class="sponsor-name">IBM Cloud</div>
+              <div class="sponsor-description">
+                Enterprise cloud platform with AI and data analytics
+                capabilities.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">OCI</div>
+              <div class="sponsor-name">Oracle Cloud</div>
+              <div class="sponsor-description">
+                Next-generation cloud designed for enterprise workloads.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silver Sponsors -->
+        <div class="sponsor-tier">
+          <h3 class="tier-title silver">SILVER SPONSORS</h3>
+          <div class="sponsors-grid silver">
+            <div class="sponsor-card">
+              <div class="sponsor-logo">DO</div>
+              <div class="sponsor-name">DigitalOcean</div>
+              <div class="sponsor-description">
+                Simple cloud computing platform for developers.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">LN</div>
+              <div class="sponsor-name">Linode</div>
+              <div class="sponsor-description">
+                High-performance cloud computing and hosting services.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">VL</div>
+              <div class="sponsor-name">Vultr</div>
+              <div class="sponsor-description">
+                Global cloud infrastructure with high-performance SSD cloud
+                servers.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">HZ</div>
+              <div class="sponsor-name">Hetzner</div>
+              <div class="sponsor-description">
+                European cloud provider offering dedicated servers and cloud
+                solutions.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partners -->
+        <div class="sponsor-tier">
+          <h3 class="tier-title partners">PARTNERS</h3>
+          <div class="sponsors-grid partners">
+            <div class="sponsor-card">
+              <div class="sponsor-logo">GH</div>
+              <div class="sponsor-name">GitHub</div>
+              <div class="sponsor-description">
+                Development platform for version control and collaboration.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">VS</div>
+              <div class="sponsor-name">Visual Studio Code</div>
+              <div class="sponsor-description">
+                Free source-code editor with debugging and Git integration.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">DK</div>
+              <div class="sponsor-name">Docker</div>
+              <div class="sponsor-description">
+                Platform for developing, shipping, and running applications in
+                containers.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">K8</div>
+              <div class="sponsor-name">Kubernetes</div>
+              <div class="sponsor-description">
+                Open-source container orchestration platform.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">TF</div>
+              <div class="sponsor-name">Terraform</div>
+              <div class="sponsor-description">
+                Infrastructure as code software tool for building and managing
+                infrastructure.
+              </div>
+            </div>
+            <div class="sponsor-card">
+              <div class="sponsor-logo">JT</div>
+              <div class="sponsor-name">JetBrains</div>
+              <div class="sponsor-description">
+                Professional development tools and IDEs for software developers.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Organisers Section -->
     <section id="team" class="team-section">
-        <div class="container">
-            <h2 class="section-title">ORGANISERS</h2>
-            <div class="organisers-grid">
-                <div class="organiser-card">
-                    <div class="organiser-image">
-                        <img src="profiles/old/anekant.jpg" alt="Shivendra Pratap">
-                    </div>
-                    <div class="organiser-info">
-                        <h3>Anekant Jain</h3>
-                        <p class="organiser-title">AWS Cloud Captain</p>
-                        <p class="organiser-location">Medicaps University<br>Indore</p>
-                        <a href="https://www.linkedin.com/in/anekantjain01/" class="linkedin-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- <div class="organiser-card">
+      <div class="container">
+        <h2 class="section-title">ORGANISERS</h2>
+        <div class="organisers-grid">
+          <div class="organiser-card">
+            <div class="organiser-image">
+              <img src="profiles/old/anekant.jpg" alt="Shivendra Pratap" />
+            </div>
+            <div class="organiser-info">
+              <h3>Anekant Jain</h3>
+              <p class="organiser-title">AWS Cloud Captain</p>
+              <p class="organiser-location">Medicaps University<br />Indore</p>
+              <a
+                href="https://www.linkedin.com/in/anekantjain01/"
+                class="linkedin-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <!-- <div class="organiser-card">
                     <div class="organiser-image">
                         <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Rashi Dashore">
                     </div>
@@ -502,213 +613,257 @@
                         </a>
                     </div>
                 </div> -->
-                <div class="organiser-card">
-                    <div class="organiser-image">
-                        <img src="profiles/vit/VIT_bhopal_captain.jpg" alt="Akash Kharabe">
-                    </div>
-                    <div class="organiser-info">
-                        <h3>Akash Kharabe</h3>
-                        <p class="organiser-title">AWS Cloud Captain</p>
-                        <p class="organiser-location">VIT Bhopal</p>
-                        <a href="https://www.linkedin.com/in/aakash-kharabe-1574bb220/" class="linkedin-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="organiser-card">
+            <div class="organiser-image">
+              <img
+                src="profiles/vit/VIT_bhopal_captain.jpg"
+                alt="Akash Kharabe"
+              />
             </div>
-
-            <h3 class="team-subtitle">CORE TEAM MEMBERS</h3>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="profiles/old/lochan.jpg" alt="Lochan Vaidya">
-                    <p>Lochan Vaidya</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/dolly.jpg" alt="Dolly malviya">
-                    <p>Dolly Malviya</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/priya gupta.jpg" alt="Priya Gupta">
-                    <p>Priya Gupta</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/shivam-verma.jpg" alt="Shivam Verma">
-                    <p>Shivam Verma</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/tanish-mishra.jpg" alt="Tanish Mishra">
-                    <p>Tanish Mishra</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/lahar.jpg" alt="Lahar Shrivastava">
-                    <p>Lahar Shrivastava</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/new/ShubhamMehta.jpg" alt="Shubham Mehta" style="object-position: top;">
-                    <p>Shubham Mehta</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/new/Aanushka Sharma.jpg" alt="Aanushka Sharma">
-                    <p>Aanushka Sharma</p>
-                </div>
-                  <div class="team-member">
-                    <img src="profiles/old/tanuj raghuvanshi.jpg" alt="Mannat Bhatia">
-                    <p>Tanuj Raghuvanshi</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/old/mannat.jpg" alt="Mannat Bhatia">
-                    <p>Mannat Bhatia</p>
-                </div>
-               
-                <div class="team-member">
-                    <img src="profiles/new/Shantanu Karkare.JPG" alt="Shantanu Karkare">
-                    <p>Shantanu Karkare</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/new/Pawni majawadia.jpg" alt="Pawni Majawadia">
-                    <p>Pawni Majawadia</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/new/VIDHI TIWARI.jpeg" alt="Vidhi Tiwari">
-                    <p>Vidhi Tiwari</p>
-                </div>
-                
-                <div class="team-member">
-                    <img src="profiles/new/Sumit Mahato.jpeg" alt="Chetan Mehta">
-                    <p>Sumit Mahato</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/new/Pradyumna Jogdand.jpg" alt="Chetan Mehta">
-                    <p>Pradyumna Jogdand</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/vit/LakshayKhtour.jpeg" alt="Chetan Mehta">
-                    <p>Lakshay Khtour</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/vit/ShreyanshUttam.jpeg" alt="Chetan Mehta">
-                    <p>Shreyansh Uttam</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/vit/NavyaSrivastava.jpeg" alt="Chetan Mehta">
-                    <p>Navya Srivastava</p>
-                </div>
-                <div class="team-member">
-                    <img src="profiles/vit/YashThakre.jpeg" alt="Chetan Mehta">
-                    <p>Yash Thakre</p>
-                </div>
+            <div class="organiser-info">
+              <h3>Akash Kharabe</h3>
+              <p class="organiser-title">AWS Cloud Captain</p>
+              <p class="organiser-location">VIT Bhopal</p>
+              <a
+                href="https://www.linkedin.com/in/aakash-kharabe-1574bb220/"
+                class="linkedin-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
+          </div>
         </div>
+
+        <h3 class="team-subtitle">CORE TEAM MEMBERS</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="profiles/old/lochan.jpg" alt="Lochan Vaidya" />
+            <p>Lochan Vaidya</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/dolly.jpg" alt="Dolly malviya" />
+            <p>Dolly Malviya</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/priya gupta.jpg" alt="Priya Gupta" />
+            <p>Priya Gupta</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/shivam-verma.jpg" alt="Shivam Verma" />
+            <p>Shivam Verma</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/tanish-mishra.jpg" alt="Tanish Mishra" />
+            <p>Tanish Mishra</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/lahar.jpg" alt="Lahar Shrivastava" />
+            <p>Lahar Shrivastava</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="profiles/new/ShubhamMehta.jpg"
+              alt="Shubham Mehta"
+              style="object-position: top"
+            />
+            <p>Shubham Mehta</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/new/Aanushka Sharma.jpg" alt="Aanushka Sharma" />
+            <p>Aanushka Sharma</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/tanuj raghuvanshi.jpg" alt="Mannat Bhatia" />
+            <p>Tanuj Raghuvanshi</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/old/mannat.jpg" alt="Mannat Bhatia" />
+            <p>Mannat Bhatia</p>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="profiles/new/Shantanu Karkare.JPG"
+              alt="Shantanu Karkare"
+            />
+            <p>Shantanu Karkare</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/new/Pawni majawadia.jpg" alt="Pawni Majawadia" />
+            <p>Pawni Majawadia</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/new/VIDHI TIWARI.jpeg" alt="Vidhi Tiwari" />
+            <p>Vidhi Tiwari</p>
+          </div>
+
+          <div class="team-member">
+            <img src="profiles/new/Shantanu Karkare.JPG" alt="Chetan Mehta" />
+            <p>Shantanu Karkare</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/new/Pradyumna Jogdand.jpg" alt="Chetan Mehta" />
+            <p>Pradyumna Jogdand</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/vit/LakshayKhtour.jpeg" alt="Chetan Mehta" />
+            <p>Lakshay Khtour</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/vit/ShreyanshUttam.jpeg" alt="Chetan Mehta" />
+            <p>Shreyansh Uttam</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/vit/NavyaSrivastava.jpeg" alt="Chetan Mehta" />
+            <p>Navya Srivastava</p>
+          </div>
+          <div class="team-member">
+            <img src="profiles/vit/YashThakre.jpeg" alt="Chetan Mehta" />
+            <p>Yash Thakre</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Venue Section -->
     <section id="venue" class="venue-section">
-        <div class="container">
-            <h2 class="section-title">VENUE</h2>
-            <div class="venue-content">
-                <div class="venue-info">
-                    <div class="venue-card">
-                        <h3>AWS Student Community Day at</h3>
-                        <div class="venue-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Medicaps University Auditorium</strong>
-                                <p>A.B. Road, Pigdamber, Rau, Indore, Madhya Pradesh</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">VENUE</h2>
+        <div class="venue-content">
+          <div class="venue-info">
+            <div class="venue-card">
+              <h3>AWS Student Community Day at</h3>
+              <div class="venue-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Medicaps University Auditorium</strong>
+                  <p>A.B. Road, Pigdamber, Rau, Indore, Madhya Pradesh</p>
                 </div>
-                <div class="venue-map">
-                    <div class="map-placeholder">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8782186897784!2d75.80101577518772!3d22.62102237945731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f958dcb7169d%3A0xd877c12078e50f0f!2sMedicaps%20University!5e0!3m2!1sen!2sin!4v1753120277266!5m2!1sen!2sin"
-                            height="300"
-                            width=100% 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="venue-map">
+            <div class="map-placeholder">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8782186897784!2d75.80101577518772!3d22.62102237945731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f958dcb7169d%3A0xd877c12078e50f0f!2sMedicaps%20University!5e0!3m2!1sen!2sin!4v1753120277266!5m2!1sen!2sin"
+                height="300"
+                width="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What are AWS Cloud Clubs?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>AWS Cloud Clubs are student-led organizations that help students learn about cloud computing and AWS services through hands-on workshops, projects, and community events.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What activities does AWS Cloud Club organize?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We organize workshops, hackathons, certification preparation sessions, industry talks, networking events, and hands-on AWS labs to help students gain practical cloud computing skills.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What are the benefits of joining AWS Cloud Club?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Members get access to AWS credits, exclusive learning resources, mentorship opportunities, career guidance, networking with industry professionals, and priority access to AWS events.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Are there any prerequisites for joining AWS Cloud Club?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No specific prerequisites are required. We welcome students from all backgrounds and skill levels who are interested in learning about cloud computing and AWS technologies.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Can beginners join AWS Cloud Club?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutely! Our club is designed to accommodate beginners and experienced students alike. We provide foundational courses and gradually advance to more complex topics.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are AWS Cloud Clubs?</span>
+              <i class="fas fa-chevron-down"></i>
             </div>
+            <div class="faq-answer">
+              <p>
+                AWS Cloud Clubs are student-led organizations that help students
+                learn about cloud computing and AWS services through hands-on
+                workshops, projects, and community events.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What activities does AWS Cloud Club organize?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We organize workshops, hackathons, certification preparation
+                sessions, industry talks, networking events, and hands-on AWS
+                labs to help students gain practical cloud computing skills.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What are the benefits of joining AWS Cloud Club?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Members get access to AWS credits, exclusive learning resources,
+                mentorship opportunities, career guidance, networking with
+                industry professionals, and priority access to AWS events.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Are there any prerequisites for joining AWS Cloud Club?</span
+              >
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                No specific prerequisites are required. We welcome students from
+                all backgrounds and skill levels who are interested in learning
+                about cloud computing and AWS technologies.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can beginners join AWS Cloud Club?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! Our club is designed to accommodate beginners and
+                experienced students alike. We provide foundational courses and
+                gradually advance to more complex topics.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h3 class="footer-title">Follow us on</h3>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/medicaps_awsc/" class="footer-social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/aws-next/posts/?feedView=all" class="footer-social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="footer-social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-                <p class="footer-text">Designed And Developed By AWS Cloud Clubs | Medicaps</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <h3 class="footer-title">Follow us on</h3>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/medicaps_awsc/"
+              class="footer-social-link"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/aws-next/posts/?feedView=all"
+              class="footer-social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <p class="footer-text">
+            Designed And Developed By AWS Cloud Clubs | Medicaps
+          </p>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
