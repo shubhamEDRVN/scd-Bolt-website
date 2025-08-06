@@ -94,3 +94,48 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Mobile Navbar Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    z-index: 100;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 1rem 0;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .nav-link {
+    padding: 1rem 2rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+  }
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 101;
+  }
+  .nav-toggle .bar {
+    width: 28px;
+    height: 4px;
+    background: #646cff;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .nav-container {
+    position: relative;
+  }
+}
