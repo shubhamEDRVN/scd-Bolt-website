@@ -1666,9 +1666,15 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primary-purple);
-    border: 2px dashed var(--light-purple);
+    /* border: 2px dashed var(--light-purple); */
     border-radius: 10px;
     background: var(--light-gray);
+}
+.sponsor-logo img{
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding: 10px;
 }
 
 .sponsor-name {
