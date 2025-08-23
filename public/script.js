@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeFAQ();
   initializeScrollEffects();
   initializeParallax();
+  initializeCountdown();
 });
 
 // Initialize all animations
@@ -382,3 +383,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500 + index * 200);
   });
 });
+
+// Countdown timer
+function initializeCountdown() {
+  const timer = document.getElementById("countdown-timer");
+  if (!timer) return;
+
+  const daysEl = timer.querySelector(".timer-days");
+  const hoursEl = timer.querySelector(".timer-hours");
+  const minutesEl = timer.querySelector(".timer-minutes");
+  const secondsEl = timer.querySelector(".timer-seconds");
+
+  // Target date: 18th September 2025, 12:00 PM
+  const targetDate = new Date("2025-09-18T12:00:00+05:30");
+
+  function pad(num) {
+    return num.toString().padStart(2, "0");
+  }
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+    if (diff < 0) {
+      timer.innerHTML = '<span class="timer-ended">Event Started!</span>';
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    diff -= days * (1000 * 60 * 60 * 24);
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    diff -= hours * (1000 * 60 * 60);
+    const minutes = Math.floor(diff / (1000 * 60));
+    diff -= minutes * (1000 * 60);
+    const seconds = Math.floor(diff / 1000);
+
+    daysEl.textContent = pad(days);
+    hoursEl.textContent = pad(hours);
+    minutesEl.textContent = pad(minutes);
+    secondsEl.textContent = pad(seconds);
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
